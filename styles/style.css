@@ -48,11 +48,10 @@ button{
  }
  .hero-image{
     padding-bottom: 0;
+    margin-bottom: 0;
  }
  .hero-image img{
     max-width: 100%;
-    height: auto;
- 
  }
 /* Main Section */
 main{
@@ -64,6 +63,7 @@ main{
     display: flex;
 }
 .match-details-items {
+    width: 550px;
     margin-right: 25px;
 }
 .match-details-item {
@@ -78,9 +78,10 @@ main{
     background-color: #fff;
     font-weight: 500;
     font-size: 20px;
-    padding: 17px 39px;
+    padding: 17px 30px;
     border-radius: 10px;
     margin-bottom: 30px;
+    text-align: center;
 }
 a.active-item {
     background-color: red;
@@ -112,6 +113,9 @@ a.active-item {
     color: #161616;
     background-color: #fff;
     padding: 4px 16px;
+ }
+ .blog-title{
+    font-size: 18px;
  }
  .blog-meta{
     display: flex;
@@ -147,6 +151,14 @@ a.active-item {
     color: #B9B9B9;
     text-decoration: none;
  }
+ .social-icons{
+    font-size: 30px;
+    margin-top: 60px;
+ }
+ .social-icons a{
+    margin: 15px;
+    color: #fff;
+ }
 
  /* Media Quiries */
 
@@ -170,6 +182,9 @@ a.active-item {
         width: 100%;
         padding: 30px;
     }
+    .hero-image {
+        padding-bottom: 0px;
+    }
     .hero-info p{
         padding: 10px 45px;
     }
@@ -182,6 +197,7 @@ a.active-item {
     .match-details-items {
         background-color: #fff;
         margin-right: 0;
+        width: 100%;
     }
 
     .match-details-item {
@@ -216,11 +232,19 @@ a.active-item {
     h1{
         font-size: 40px;
     }
+    /* Hero Section */
+    .hero-info,.hero-image {
+        padding: 30px;
+    }
+    .hero-info {
+        padding-right: 0px;
+    }
     /* Aside Style */
     .match-details {
         flex-direction: column;
     }
     .match-details-items{
+        width: 100%;
         background-color: #fff;
         margin-right: 0;
     }
@@ -232,7 +256,7 @@ a.active-item {
     }
     .match-details-item a{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 17px 60px;
+        padding: 17px 40px;
     }
         
     /* Blog Section Styles */
