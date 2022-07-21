@@ -192,12 +192,10 @@ a.active-item {
     .hero-image {
         width: 100%;
         padding: 30px;
-    }
-    .hero-image {
         padding-bottom: 0px;
     }
     .hero-image img {
-        width: 350px;
+        width: 320px;
     }
 
     .hero:hover .hero-info,
@@ -258,8 +256,13 @@ a.active-item {
     .hero-info {
         padding-right: 0px;
     }
+    .hero p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .hero-image img {
-        width: 350px;
+        width: 280px;
     }
     .hero:hover .hero-info,.hero:hover img {
         transform: scale(.95);
