@@ -44,14 +44,25 @@ button{
  }
  .hero-info,.hero-image{
     width: 50%;
-    padding: 60px;
+    padding: 50px;
+ }
+ .hero-info{
+    transition: transform .2s;
  }
  .hero-image{
     padding-bottom: 0;
     margin-bottom: 0;
+    padding: 15px;
  }
  .hero-image img{
-    max-width: 100%;
+    width: 450px;
+    transition: transform .2s;
+ }
+ .hero:hover img{
+    transform: scale(1.1);
+ }
+ .hero:hover .hero-info{
+    transform: scale(.95);
  }
 /* Main Section */
 main{
@@ -185,6 +196,14 @@ a.active-item {
     .hero-image {
         padding-bottom: 0px;
     }
+    .hero-image img {
+        width: 350px;
+    }
+
+    .hero:hover .hero-info,
+    .hero:hover img {
+        transform: scale(.95);
+    }
     .hero-info p{
         padding: 10px 45px;
     }
@@ -238,6 +257,12 @@ a.active-item {
     }
     .hero-info {
         padding-right: 0px;
+    }
+    .hero-image img {
+        width: 350px;
+    }
+    .hero:hover .hero-info,.hero:hover img {
+        transform: scale(.95);
     }
     /* Aside Style */
     .match-details {
